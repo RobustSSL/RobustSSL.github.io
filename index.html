@@ -140,7 +140,7 @@
     <section id="cifar10-cifar10" class="section-with-bg">
       <div class="container wow fadeInUp", data-aos="fade-up">
         <div class="section-title" data-aos="zoom-in">
-          <h2 style="font-size: 30px;">Transferability from CIFAR-10 to CIFAR-10 <br>
+          <h2 style="font-size: 28px;">Transferability from CIFAR-10 to CIFAR-10 <br>
           <a href="#cifar10-cifar10-SLF"><u>[SLF]</u></a>
           <a href="#cifar10-cifar10-ALF"><u>[ALF]</u></a>
           <a href="#cifar10-cifar10-AFF"><u>[AFF]</u></a> </h2>
@@ -150,31 +150,142 @@
           <center><h3 style="font-size: 25px;"><u>Performance Evaluated via SLF</u></h3></center>
         </div>
         <div class="row schedule-item" >
-          <div class="col-md-1"><h5><center>Rank</center></h5></div>
+          <div class="col-md-1" style="width: 5%;" ><h5><center><b>Rank</b></center></h5></div>
           <div class="col-md"><h5><center><b>Paper</b></center></h5></div>
-          <div class="col-md-3"><h5><center><b>Vanilla</b></center></h5>  <br>
+          <div class="col-md-4" style="width: 24%;"><h5><center><b>Vanilla</b></center></h5>  <br>
           </div>
-          <div class="col-md-3"><h5><center><b>AutoLoRa</b></center></h5>  <br>
+          <div class="col-md-4" style="width: 24%;"><h5><center><b>AutoLoRa</b></center></h5>  <br>
           </div>
         </div>
         <div class="row schedule-item" >
-          <div class="col-md-1"><h5><center></center></h5></div>
+          <div class="col-md-1" style="width: 5%;"><h5><center></center></h5></div>
           <div class="col-md"><h5><center><b></b></center></h5></div>
-          <div class="col-md-1"><h5><center><b>RA </b></center></h5></div>
-          <div class="col-md-1"><h5><center><b>CA </b></center></h5></div>
-          <div class="col-md-1"><h5><center><b>SA </b></center></h5></div>
-          <div class="col-md-1"><h5><center><b>RA </b></center></h5></div>
-          <div class="col-md-1"><h5><center><b>CA </b></center></h5></div>
-          <div class="col-md-1"><h5><center><b>SA </b></center></h5></div>
+          <div class="col-md-1" style="width: 6%;"><h5><center><b>Mean </b></center></h5></div>
+          <div class="col-md-1" style="width: 6%;"><h5><center><b>RA </b></center></h5></div>
+          <div class="col-md-1" style="width: 6%;"><h5><center><b>CA </b></center></h5></div>
+          <div class="col-md-1" style="width: 6%;"><h5><center><b>SA </b></center></h5></div>
+          <div class="col-md-1" style="width: 6%;"><h5><center><b>Mean </b></center></h5></div>
+          <div class="col-md-1" style="width: 6%;"><h5><center><b>RA </b></center></h5></div>
+          <div class="col-md-1" style="width: 6%;"><h5><center><b>CA </b></center></h5></div>
+          <div class="col-md-1" style="width: 6%;"><h5><center><b>SA </b></center></h5></div>
         </div>
+        
+        <div id="scheduleContainer"></div>
+
+        <script>
+            // Sample data (you can replace this with your own data)
+            const scheduleData = [
+                { paper: 'Enhancing Adversarial Contrastive Learning via Adversarial Invariant Regularization', link: 'https://arxiv.org/abs/2305.00374', venue: 'NeurIPS 2023', 
+                comment: '*Using post-processing', ra1: 46.99, ca1: 72.11, sa1: 81.80, ra2: 45.40, ca2: 74.55, sa2: 83.52},
+                { paper: 'Rethinking the Effect of Data Augmentation in Adversarial Contrastive Learning ', link: 'https://openreview.net/forum?id=0qmwFNJyxCL&noteId=ZXhFXELOcQ', venue: 'ICLR 2023', 
+                comment: '*Using post-processing', ra1: 46.54, ca1: 71.96, sa1: 79.82, ra2: 45.07, ca2: 73.56, sa2: 81.75},
+                { paper: 'Enhancing Adversarial Contrastive Learning via Adversarial Invariant Regularization', link: 'https://arxiv.org/abs/2305.00374', venue: 'NeurIPS 2023', 
+                comment: '', ra1: 45.27, ca1: 70.51, sa1: 78.08, ra2: 43.50, ca2: 70.21, sa2: 78.52},
+                { paper: 'Rethinking the Effect of Data Augmentation in Adversarial Contrastive Learning ', link: 'https://openreview.net/forum?id=0qmwFNJyxCL&noteId=ZXhFXELOcQ', venue: 'ICLR 2023', 
+                comment: '', ra1: 45.09, ca1: 68.67, sa1: 75.41, ra2: 44.65, ca2:	70.96, sa2:77.83},
+                { paper: 'Decoupled Adversarial Contrastive Learning for Self-supervised Adversarial Robustness', link: 'https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136900716.pdf', venue: 'ECCV 2022', 
+                comment: '', ra1: 43.27, ca1: 73.06, sa1: 79.94, ra2: 43.85	, ca2: 72.74, sa2: 80.80},
+                { paper: 'When Does Contrastive Learning Preserve Adversarial Robustness from Pretraining to Finetuning?', link: 'https://arxiv.org/abs/2111.01124', venue: 'NeurIPS 2021', 
+                comment: '', ra1: 43.18, ca1: 73.14, sa1: 82.36, ra2: 42.79	, ca2: 73.71, sa2: 	83.04},
+                { paper: 'Adversarial Contrastive Learning via Asymmetric InfoNCE', link: 'https://arxiv.org/abs/2207.08374#:~:text=Contrastive%20learning%20(CL)%20has%20recently,other%2C%20yields%20better%20adversarial%20robustness', venue: 'ECCV 2022', 
+                comment: '', ra1: 42.72, ca1: 74.09, sa1: 83.70, ra2: 42.46	, ca2: 74.46, sa2: 	84.17},
+                { paper: 'Robust Pre-Training by Adversarial Contrastive Learning', link: 'https://proceedings.neurips.cc/paper/2020/hash/ba7e36c43aff315c00ec2b8625e3b719-Abstract.html', venue: 'NeurIPS 2020', 
+                comment: '', ra1: 39.17, ca1: 70.72, sa1: 78.22, ra2: 37.92	, ca2: 72.65, sa2: 	80.65},
+            ];
+            
+    
+            // Get the container element by its id
+            const scheduleContainer = document.getElementById('scheduleContainer');
+    
+            // Loop through the data and create schedule items
+            scheduleData.forEach((item, index) => {
+                // Create a new schedule item container
+                const scheduleItem = document.createElement('div');
+                scheduleItem.classList.add('row', 'schedule-item');
+                if (index % 2 == 0) {
+                  scheduleItem.style.backgroundColor = "#dddde0"
+                }
+    
+                // Create the columns
+                const col1 = document.createElement('div');
+                col1.classList.add('col-md-1');
+                col1.style.width = '5%'
+                col1.innerHTML = `<h5><center>${index+1}</center></h5>`;
+    
+                const col2 = document.createElement('div');
+                col2.classList.add('col-md');
+                if (!!item.comment) {
+                  col2.innerHTML = `<h5><center><a href=${item.link}><b>${item.paper}</b></a> <br> <small> ${item.comment}</small> <br> (${item.venue})  </center></h5>`;
+                }else {
+                  col2.innerHTML = `<h5><center><a href=${item.link}><b>${item.paper}</b></a> <br> (${item.venue}) </center></h5>`;
+                }
+                
+                const col9 = document.createElement('div');
+                col9.classList.add('col-md-1');
+                var m = (item.ra1 + item.ca1 + item.sa1)/3
+                col9.style.width = '6%'
+                col9.innerHTML = `<h5><center><b>${m.toFixed(2)}</b></center></h5>`;
+
+                const col3 = document.createElement('div');
+                col3.classList.add('col-md-1');
+                col3.style.width = '6%'
+                col3.innerHTML = `<h5><center><b>${item.ra1.toFixed(2)}</b></center></h5>`;
+
+                const col4 = document.createElement('div');
+                col4.classList.add('col-md-1');
+                col4.style.width = '6%'
+                col4.innerHTML = `<h5><center><b>${item.ca1.toFixed(2)}</b></center></h5>`;
+
+                const col5 = document.createElement('div');
+                col5.classList.add('col-md-1');
+                col5.style.width = '6%'
+                col5.innerHTML = `<h5><center><b>${item.sa1.toFixed(2)}</b></center></h5>`;
+
+                const col10 = document.createElement('div');
+                col10.classList.add('col-md-1');
+                col10.style.width = '6%'
+                var m = (item.ra2 + item.ca2 + item.sa2)/3
+                col10.innerHTML = `<h5><center><b>${m.toFixed(2)}</b></center></h5>`;
+
+                const col6 = document.createElement('div');
+                col6.classList.add('col-md-1');
+                col6.style.width = '6%'
+                col6.innerHTML = `<h5><center><b>${item.ra2.toFixed(2)}</b></center></h5>`;
+
+                const col7 = document.createElement('div');
+                col7.classList.add('col-md-1');
+                col7.style.width = '6%'
+                col7.innerHTML = `<h5><center><b>${item.ca2.toFixed(2)}</b></center></h5>`;
+
+                const col8 = document.createElement('div');
+                col8.classList.add('col-md-1');
+                col8.style.width = '6%'
+                col8.innerHTML = `<h5><center><b>${item.sa2.toFixed(2)}</b></center></h5>`;
+
+                // Append the columns to the schedule item
+                scheduleItem.appendChild(col1);
+                scheduleItem.appendChild(col2);
+                scheduleItem.appendChild(col9);
+                scheduleItem.appendChild(col3);
+                scheduleItem.appendChild(col4);
+                scheduleItem.appendChild(col5);
+                scheduleItem.appendChild(col10);
+                scheduleItem.appendChild(col6);
+                scheduleItem.appendChild(col7);
+                scheduleItem.appendChild(col8);
+    
+                // Append the schedule item to the container
+                scheduleContainer.appendChild(scheduleItem);
+            });
+        </script>
 
         <br>
 
         <div id="cifar10-cifar10-ALF"  class="row">
-          <center><h3 ><u>Performance Evaluated via ALF</u></h3></center>
+          <center><h3 style="font-size: 25px;"><u>Performance Evaluated via ALF</u></h3></center>
         </div>
         <div class="row schedule-item" >
-          <div class="col-md-1"><h5><center>Rank</center></h5></div>
+          <div class="col-md-1"><h5><center><b>Rank</b></center></h5></div>
           <div class="col-md"><h5><center><b>Paper</b></center></h5></div>
           <div class="col-md-3"><h5><center><b>Vanilla</b></center></h5>  <br>
           </div>
@@ -198,7 +309,7 @@
           <center><h3  style="font-size: 25px;" ><u>Performance Evaluated via AFF</u></h3></center>
         </div>
         <div class="row schedule-item" >
-          <div class="col-md-1"><h5><center>Rank</center></h5></div>
+          <div class="col-md-1"><h5><center><b>Rank</b></center></h5></div>
           <div class="col-md"><h5><center><b>Paper</b></center></h5></div>
           <div class="col-md-3"><h5><center><b>Vanilla</b></center></h5>  <br>
           </div>
@@ -223,7 +334,7 @@
         <section id="cifar100-cifar100" class="about">
           <div class="container wow fadeInUp", data-aos="fade-up">
             <div class="section-title" data-aos="zoom-in">
-              <h2 style="font-size: 30px;">Transferability from CIFAR-100 to CIFAR-100 <br>
+              <h2 style="font-size: 28px;">Transferability from CIFAR-100 to CIFAR-100 <br>
               <a href="#cifar100-cifar100-SLF"><u>[SLF]</u></a>
               <a href="#cifar100-cifar100-ALF"><u>[ALF]</u></a>
               <a href="#cifar100-cifar100-AFF"><u>[AFF]</u></a> </h2>
@@ -233,7 +344,7 @@
               <center><h3 style="font-size: 25px;"><u>Performance Evaluated via SLF</u></h3></center>
             </div>
             <div class="row schedule-item" >
-              <div class="col-md-1"><h5><center>Rank</center></h5></div>
+              <div class="col-md-1"><h5><center><b>Rank</b></center></h5></div>
               <div class="col-md"><h5><center><b>Paper</b></center></h5></div>
               <div class="col-md-3"><h5><center><b>Vanilla</b></center></h5>  <br>
               </div>
@@ -254,10 +365,10 @@
             <br>
     
             <div id="cifar100-cifar100-ALF"  class="row">
-              <center><h3 ><u>Performance Evaluated via ALF</u></h3></center>
+              <center><h3 style="font-size: 25px;"><u>Performance Evaluated via ALF</u></h3></center>
             </div>
             <div class="row schedule-item" >
-              <div class="col-md-1"><h5><center>Rank</center></h5></div>
+              <div class="col-md-1"><h5><center><b>Rank</b></center></h5></div>
               <div class="col-md"><h5><center><b>Paper</b></center></h5></div>
               <div class="col-md-3"><h5><center><b>Vanilla</b></center></h5>  <br>
               </div>
@@ -281,7 +392,7 @@
               <center><h3  style="font-size: 25px;" ><u>Performance Evaluated via AFF</u></h3></center>
             </div>
             <div class="row schedule-item" >
-              <div class="col-md-1"><h5><center>Rank</center></h5></div>
+              <div class="col-md-1"><h5><center><b>Rank</b></center></h5></div>
               <div class="col-md"><h5><center><b>Paper</b></center></h5></div>
               <div class="col-md-3"><h5><center><b>Vanilla</b></center></h5>  <br>
               </div>
@@ -306,7 +417,7 @@
     <section id="stl10-stl10" class="section-with-bg">
       <div class="container wow fadeInUp", data-aos="fade-up">
         <div class="section-title" data-aos="zoom-in">
-          <h2 style="font-size: 30px;">Transferability from STL-10 to STL-10 <br>
+          <h2 style="font-size: 28px;">Transferability from STL-10 to STL-10 <br>
           <a href="#stl10-stl10-SLF"><u>[SLF]</u></a>
           <!-- <a href="#cifar10-cifar10-ALF"><u>[ALF]</u></a> -->
           <!-- <a href="#cifar10-cifar10-AFF"><u>[AFF]</u></a>  -->
@@ -317,7 +428,7 @@
           <center><h3 style="font-size: 25px;"><u>Performance Evaluated via SLF</u></h3></center>
         </div>
         <div class="row schedule-item" >
-          <div class="col-md-1"><h5><center>Rank</center></h5></div>
+          <div class="col-md-1"><h5><center><b>Rank</b></center></h5></div>
           <div class="col-md"><h5><center><b>Paper</b></center></h5></div>
           <div class="col-md-3"><h5><center><b>Vanilla</b></center></h5>  <br>
           </div>
@@ -341,7 +452,7 @@
           <center><h3 ><u>Performance Evaluated via ALF</u></h3></center>
         </div>
         <div class="row schedule-item" >
-          <div class="col-md-1"><h5><center>Rank</center></h5></div>
+          <div class="col-md-1"><h5><center><b>Rank</b</center></h5></div>
           <div class="col-md"><h5><center><b>Paper</b></center></h5></div>
           <div class="col-md-3"><h5><center><b>Vanilla</b></center></h5>  <br>
           </div>
@@ -365,7 +476,7 @@
           <center><h3  style="font-size: 25px;" ><u>Performance Evaluated via AFF</u></h3></center>
         </div>
         <div class="row schedule-item" >
-          <div class="col-md-1"><h5><center>Rank</center></h5></div>
+          <div class="col-md-1"><h5><center><b>Rank</b</center></h5></div>
           <div class="col-md"><h5><center><b>Paper</b></center></h5></div>
           <div class="col-md-3"><h5><center><b>Vanilla</b></center></h5>  <br>
           </div>
@@ -390,7 +501,7 @@
         <section id="cifar10-stl10" class="about">
           <div class="container wow fadeInUp", data-aos="fade-up">
             <div class="section-title" data-aos="zoom-in">
-              <h2 style="font-size: 30px;">Transferability from CIFAR-10 to STL-10 <br>
+              <h2 style="font-size: 28px;">Transferability from CIFAR-10 to STL-10 <br>
               <a href="#cifar10-stl10-SLF"><u>[SLF]</u></a>
               <a href="#cifar10-stl10-ALF"><u>[ALF]</u></a>
               <a href="#cifar10-stl10-AFF"><u>[AFF]</u></a> </h2>
@@ -400,7 +511,7 @@
               <center><h3 style="font-size: 25px;"><u>Performance Evaluated via SLF</u></h3></center>
             </div>
             <div class="row schedule-item" >
-              <div class="col-md-1"><h5><center>Rank</center></h5></div>
+              <div class="col-md-1"><h5><center><b>Rank</b></center></h5></div>
               <div class="col-md"><h5><center><b>Paper</b></center></h5></div>
               <div class="col-md-3"><h5><center><b>Vanilla</b></center></h5>  <br>
               </div>
@@ -421,10 +532,10 @@
             <br>
     
             <div id="cifar10-stl10-ALF"  class="row">
-              <center><h3 ><u>Performance Evaluated via ALF</u></h3></center>
+              <center><h3 style="font-size: 25px;"><u>Performance Evaluated via ALF</u></h3></center>
             </div>
             <div class="row schedule-item" >
-              <div class="col-md-1"><h5><center>Rank</center></h5></div>
+              <div class="col-md-1"><h5><center><b>Rank</b></center></h5></div>
               <div class="col-md"><h5><center><b>Paper</b></center></h5></div>
               <div class="col-md-3"><h5><center><b>Vanilla</b></center></h5>  <br>
               </div>
@@ -448,7 +559,7 @@
               <center><h3  style="font-size: 25px;" ><u>Performance Evaluated via AFF</u></h3></center>
             </div>
             <div class="row schedule-item" >
-              <div class="col-md-1"><h5><center>Rank</center></h5></div>
+              <div class="col-md-1"><h5><center><b>Rank</b></center></h5></div>
               <div class="col-md"><h5><center><b>Paper</b></center></h5></div>
               <div class="col-md-3"><h5><center><b>Vanilla</b></center></h5>  <br>
               </div>
@@ -474,7 +585,7 @@
     <section id="cifar100-stl10" class="section-with-bg">
       <div class="container wow fadeInUp", data-aos="fade-up">
         <div class="section-title" data-aos="zoom-in">
-          <h2 style="font-size: 30px;">Transferability from CIFAR-100 to STL-10 <br>
+          <h2 style="font-size: 28px;">Transferability from CIFAR-100 to STL-10 <br>
           <a href="#cifar100-stl10-SLF"><u>[SLF]</u></a>
           <a href="#cifar100-stl10-ALF"><u>[ALF]</u></a>
           <a href="#cifar100-stl10-AFF"><u>[AFF]</u></a> </h2>
@@ -484,7 +595,7 @@
           <center><h3 style="font-size: 25px;"><u>Performance Evaluated via SLF</u></h3></center>
         </div>
         <div class="row schedule-item" >
-          <div class="col-md-1"><h5><center>Rank</center></h5></div>
+          <div class="col-md-1"><h5><center><b>Rank</b></center></h5></div>
           <div class="col-md"><h5><center><b>Paper</b></center></h5></div>
           <div class="col-md-3"><h5><center><b>Vanilla</b></center></h5>  <br>
           </div>
@@ -505,10 +616,10 @@
         <br>
 
         <div id="cifar100-stl10-ALF"  class="row">
-          <center><h3 ><u>Performance Evaluated via ALF</u></h3></center>
+          <center><h3 style="font-size: 25px;"><u>Performance Evaluated via ALF</u></h3></center>
         </div>
         <div class="row schedule-item" >
-          <div class="col-md-1"><h5><center>Rank</center></h5></div>
+          <div class="col-md-1"><h5><center><b>Rank</b></center></h5></div>
           <div class="col-md"><h5><center><b>Paper</b></center></h5></div>
           <div class="col-md-3"><h5><center><b>Vanilla</b></center></h5>  <br>
           </div>
@@ -532,7 +643,7 @@
           <center><h3  style="font-size: 25px;" ><u>Performance Evaluated via AFF</u></h3></center>
         </div>
         <div class="row schedule-item" >
-          <div class="col-md-1"><h5><center>Rank</center></h5></div>
+          <div class="col-md-1"><h5><center><b>Rank</b></center></h5></div>
           <div class="col-md"><h5><center><b>Paper</b></center></h5></div>
           <div class="col-md-3"><h5><center><b>Vanilla</b></center></h5>  <br>
           </div>
