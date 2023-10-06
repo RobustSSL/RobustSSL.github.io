@@ -4,7 +4,7 @@
         { paper: 'Enhancing Adversarial Contrastive Learning via Adversarial Invariant Regularization', link: 'https://arxiv.org/abs/2305.00374', venue: 'NeurIPS 2023', 
         comment: '*Using post-processing', ra1: 20.61, ca1: 43.47, sa1: 53.93, ra2:20.87, ca2:43.55 , sa2:54.22},
         { paper: 'Enhancing Adversarial Contrastive Learning via Adversarial Invariant Regularization', link: 'https://arxiv.org/abs/2305.00374', venue: 'NeurIPS 2023', 
-        comment: '', ra1: 20.13, ca1: 41.18, sa1: 46.19, ra2: 20.02, ca2: 38.08, sa2: 46.26},
+        comment: '', ra1: 20.13, ca1: 41.18, sa1: 46.19, ra2: 20.02, ca2: 41.08, sa2: 46.26},
         { paper: 'Rethinking the Effect of Data Augmentation in Adversarial Contrastive Learning ', link: 'https://openreview.net/forum?id=0qmwFNJyxCL&noteId=ZXhFXELOcQ', venue: 'ICLR 2023', 
         comment: '*Using post-processing', ra1: 20.07, ca1: 43.46, sa1: 52.16, ra2: 19.97, ca2: 42.69, sa2: 51.23},
         { paper: 'Adversarial Contrastive Learning via Asymmetric InfoNCE', link: 'https://arxiv.org/abs/2207.08374#:~:text=Contrastive%20learning%20(CL)%20has%20recently,other%2C%20yields%20better%20adversarial%20robustness', venue: 'ECCV 2022', 
@@ -14,7 +14,7 @@
         { paper: 'When Does Contrastive Learning Preserve Adversarial Robustness from Pretraining to Finetuning?', link: 'https://arxiv.org/abs/2111.01124', venue: 'NeurIPS 2021', 
         comment: '', ra1: 19.10, ca1: 36.90, sa1: 44.60, ra2: 19.24	, ca2: 39.94, sa2: 	49.09},
         { paper: 'Robust Pre-Training by Adversarial Contrastive Learning', link: 'https://proceedings.neurips.cc/paper/2020/hash/ba7e36c43aff315c00ec2b8625e3b719-Abstract.html', venue: 'NeurIPS 2020', 
-        comment: '', ra1: 17.30, ca1: 38.59, sa1: 45.82, ra2: 17.31	, ca2: 36.40, sa2: 	42.85},
+        comment: '', ra1: 17.30, ca1: 38.59, sa1: 45.82, ra2: 17.31	, ca2: 37.40, sa2: 	44.85},
     ];			
     
 
@@ -39,9 +39,9 @@
         const col2 = document.createElement('div');
         col2.classList.add('col-md');
         if (!!item.comment) {
-            col2.innerHTML = `<h5><center><a href=${item.link}>${item.paper}</a> <br> <small> ${item.comment}</small> <br> (${item.venue})  </center></h5>`;
+            col2.innerHTML = `<h5><center><a href=${item.link}>${item.paper}</a> <br> <small> ${item.comment}</small> <br> <small><i>${item.venue}</i></small>  </center></h5>`;
         }else {
-            col2.innerHTML = `<h5><center><a href=${item.link}>${item.paper}</a> <br> (${item.venue}) </center></h5>`;
+            col2.innerHTML = `<h5><center><a href=${item.link}>${item.paper}</a> <br> <small><i>${item.venue}</i></small> </center></h5>`;
         }
         
         const col9 = document.createElement('div');

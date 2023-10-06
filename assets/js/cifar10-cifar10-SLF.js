@@ -42,9 +42,9 @@
         const col2 = document.createElement('div');
         col2.classList.add('col-md');
         if (!!item.comment) {
-            col2.innerHTML = `<h5><center><a href=${item.link}>${item.paper}</a> <br> <small> ${item.comment}</small> <br> (${item.venue})  </center></h5>`;
+            col2.innerHTML = `<h5><center><a href=${item.link}>${item.paper}</a> <br> <small> ${item.comment}</small> <br> <small><i>${item.venue}</i></small>  </center></h5>`;
         }else {
-            col2.innerHTML = `<h5><center><a href=${item.link}>${item.paper}</a> <br> (${item.venue}) </center></h5>`;
+            col2.innerHTML = `<h5><center><a href=${item.link}>${item.paper}</a> <br> <small><i>${item.venue}</i></small> </center></h5>`;
         }
         
         const col9 = document.createElement('div');
