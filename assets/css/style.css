@@ -134,7 +134,7 @@ h6 {
   line-height: 1;
   font-weight: 700;
   letter-spacing: 1px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Calibri", sans-serif;
 }
 
 #header .logo h1 a,
@@ -181,7 +181,7 @@ h6 {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Calibri", sans-serif;
   font-size: 18px;
   font-weight: 500;
   color: #fff;
@@ -442,7 +442,7 @@ h6 {
 }
 
 #hero .btn-get-started {
-  font-family: "Raleway", sans-serif;
+  font-family: "Calibri", sans-serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -775,7 +775,7 @@ section {
 .counts .counters p {
   padding: 0;
   margin: 0 0 20px 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Calibri", sans-serif;
   font-size: 14px;
 }
 
@@ -799,7 +799,7 @@ section {
 }
 
 .cta .cta-btn {
-  font-family: "Raleway", sans-serif;
+  font-family: "Calibri", sans-serif;
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 1px;
@@ -1274,7 +1274,7 @@ section {
   font-size: 42px;
   color: #8fc04e;
   font-weight: 500;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Calibri", sans-serif;
   margin-bottom: 20px;
 }
 
@@ -1327,7 +1327,7 @@ section {
   color: #8fc04e;
   font-size: 14px;
   font-weight: 400;
-  font-family: "Raleway", sans-serif;
+  font-family: "Calibri", sans-serif;
   font-weight: 600;
   transition: 0.3s;
 }
@@ -1398,7 +1398,7 @@ section {
 .faq .faq-list a {
   display: block;
   position: relative;
-  font-family: "Poppins", sans-serif;
+  font-family: "Calibri", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
@@ -1672,7 +1672,7 @@ section {
   font-weight: 700;
   color: #fff;
   position: relative;
-  font-family: "Poppins", sans-serif;
+  font-family: "Calibri", sans-serif;
   padding-bottom: 0;
   margin-bottom: 0;
 }
