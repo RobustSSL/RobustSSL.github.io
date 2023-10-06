@@ -2,7 +2,7 @@
     // Sample data (you can replace this with your own data)
     const scheduleData_cifar100_cifar100_SLF = [
         { paper: 'Enhancing Adversarial Contrastive Learning via Adversarial Invariant Regularization', link: 'https://arxiv.org/abs/2305.00374', venue: 'NeurIPS 2023', 
-        comment: '*Using post-processing', ra1: 20.61, ca1: 43.47, sa1: 53.93, ra2:21.31, ca2:44.16 , sa2:54.72},
+        comment: '*Using post-processing', ra1: 20.61, ca1: 43.47, sa1: 53.93, ra2:20.87, ca2:43.55 , sa2:54.22},
         { paper: 'Enhancing Adversarial Contrastive Learning via Adversarial Invariant Regularization', link: 'https://arxiv.org/abs/2305.00374', venue: 'NeurIPS 2023', 
         comment: '', ra1: 20.13, ca1: 41.18, sa1: 46.19, ra2: 20.02, ca2: 38.08, sa2: 46.26},
         { paper: 'Rethinking the Effect of Data Augmentation in Adversarial Contrastive Learning ', link: 'https://openreview.net/forum?id=0qmwFNJyxCL&noteId=ZXhFXELOcQ', venue: 'ICLR 2023', 
@@ -27,7 +27,7 @@
         const scheduleItem = document.createElement('div');
         scheduleItem.classList.add('row', 'schedule-item');
         if (index % 2 == 0) {
-            scheduleItem.style.backgroundColor = "#dddde0"
+            scheduleItem.style.backgroundColor = "#e5e5e5"
         }
 
         // Create the columns

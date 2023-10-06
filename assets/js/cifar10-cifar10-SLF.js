@@ -30,7 +30,7 @@
         const scheduleItem = document.createElement('div');
         scheduleItem.classList.add('row', 'schedule-item');
         if (index % 2 == 0) {
-            scheduleItem.style.backgroundColor = "#dddde0"
+            scheduleItem.style.backgroundColor = "#e5e5e5"
         }
 
         // Create the columns
