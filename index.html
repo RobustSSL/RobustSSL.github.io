@@ -59,7 +59,7 @@
           <li><a class="nav-link scrollto" href="#speakers">Speakers</a></li>
           <li><a class="nav-link scrollto" href="#discussion">Panel</a></li>
           <li><a class="nav-link scrollto" href="#venue">Venue</a></li> -->
-          <li><a class="nav-link scrollto" href="https://github.com/GodXuxilie/ACL_Benchmark">Model Zoo</a></li>
+          <li><a class="nav-link scrollto" href="https://github.com/GodXuxilie/RobustSSL_Benchmark">Model Zoo</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -95,35 +95,35 @@
           <!-- <div class="col-xl-6 col-lg-4 d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5"> -->
             <div class="box-heading" data-aos="fade-up">
               <h3>Introduction to Robust Self-Supervised Learning (RobustSSL) Benchmark</h3>
-              <p style="font-size: 17px;"> The wide-ranging applications of foundation models, espeically in safety-critical areas, necessitates the robust self-supervised learning (RobustSSL) which can yield adversarially robust foundation models. 
+              <p style="font-size: 18px;"> The wide-ranging applications of foundation models, espeically in safety-critical areas, necessitates the robust self-supervised learning (RobustSSL) which can yield adversarially robust foundation models. 
                 Fine-tuning these robust foundation models can introduce strong adversarial robustness in downstream tasks. 
                 Here, we build a leaderboard of the transferability of RobustSSL methods, which aims to provide a comprehensive evaluation of RobustSSL methods and facilitate the research in robust pre-training.
                  </p>
               <h3>Performance Mesurement</h3>
-              <p style="font-size: 17px;">The code for conducting fine-tuning and evaluation as well as the model zoo are provided in <a href="https://github.com/GodXuxilie/ACL_Benchmark">GitHub</a>.</p>
+              <p style="font-size: 18px;">The code for conducting fine-tuning and evaluation as well as the model zoo are provided in <a href="https://github.com/GodXuxilie/RobustSSL_Benchmark">GitHub</a>.</p>
               <!-- We use the following three fine-tuning modes to provide a comprehensive evaluation of the transferability: -->
               <h3 style="font-size: 20px;">Fine-Tuning Modes</h3>
-              <ul style="font-size: 17px;">
+              <ul style="font-size: 18px;">
                 <li>Standard linear fine-tuning (<b>SLF</b>): only standardly fine-tuning the classifier while freezing the feature extractor.
                 </li>
                 <li>Adversarial linear fine-tuning (<b>ALF</b>): only adversarially fine-tuning the classifier while freezing the feature extractor.</li>
                 <li>Adversarial full fine-tuning (<b>AFF</b>): adversarially fine-tuning both the feature extractor and the classifier.</li>
               </ul>
               <h3 style="font-size: 20px;">Fine-Tuning Methods</h3>
-              <ul style="font-size: 17px;">
+              <ul style="font-size: 18px;">
                 <li><b>Vanilla</b>: You need to specify the hyper-parameters such as the learning rate and the batch size for each pre-trained models. 
                 </li>
                 <li><a href="https://arxiv.org/abs/2310.01818"><b>AutoLoRa</b></a>: It is a parameter-free and automated robust fine-tuning framework. You DO NOT need to search for the appropriate hyper-parameters. </li>
               </ul>
               <!-- We use the following three evaluation metrics to meausre the performance in downstream tasks: -->
               <h3 style="font-size: 20px;">Evaluation Metrics</h3>
-              <ul style="font-size: 17px;">
+              <ul style="font-size: 18px;">
                 <li>Robust accuracy (<b>RA</b>) refers to the robust test accuracy evaluated on the adversarial test data generated via the standard version of AutoAttack.</li>
                 <li>Corruption accuracy (<b>CA</b>) refers to the mean test accuracy of the test data under common corruptions with corruption severity ranging {1,2,3,4,5}.</li>
                 <li>Standard accuracy (<b>SA</b>) refers to the standard test accuracy evaluated on the natural test data.</li>
               </ul>
               <h3>Leaderboards</h3>
-              <p style="font-size: 17px;">*The rank is based on the value of <b>RA</b>.</p>
+              <p style="font-size: 18px;">*The rank is based on the value of <b>RA</b> via vanilla fine-tuning.</p>
               <ul style="font-size: 20px;">
                 <li><a class="nav-link scrollto active" href="#cifar10-cifar10"><u><b>Transferability from CIFAR-10 to CIFAR-10</b></u></a></li>
                 <li><a class="nav-link scrollto active" href="#cifar100-cifar100"><u><b>Transferability from CIFAR-100 to CIFAR-100</b></u></a></li>
@@ -517,7 +517,7 @@
             </div>
             
             <div id="scheduleContainer_cifar10_stl10_AFF"></div>
-            <script src="./assets/js/cifar10_stl10-AFF.js"></script>
+            <script src="./assets/js/cifar10-stl10-AFF.js"></script>
 
           </div>
         </section><!-- End Schedule Section -->
@@ -617,7 +617,7 @@
         </div>
         
         <div id="scheduleContainer_cifar100_stl10_AFF"></div>
-        <script src="./assets/js/cifar100_stl10-AFF.js"></script>
+        <script src="./assets/js/cifar100-stl10-AFF.js"></script>
       </div>
     </section><!-- End Schedule Section -->
 
