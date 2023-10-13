@@ -6,7 +6,7 @@
         { paper: 'Rethinking the Effect of Data Augmentation in Adversarial Contrastive Learning ', link: 'https://openreview.net/forum?id=0qmwFNJyxCL&noteId=ZXhFXELOcQ', venue: 'ICLR 2023', 
         comment: '*Using post-processing', ra1: 46.54, ca1: 71.96, sa1: 79.82, ra2: 45.07, ca2: 73.56, sa2: 81.75},
         { paper: 'Enhancing Adversarial Contrastive Learning via Adversarial Invariant Regularization', link: 'https://arxiv.org/abs/2305.00374', venue: 'NeurIPS 2023', 
-        comment: '', ra1: 45.27, ca1: 70.51, sa1: 78.08, ra2: 44.80, ca2: 70.21, sa2: 78.52},
+        comment: '', ra1: 45.17, ca1: 70.51, sa1: 78.08, ra2: 44.80, ca2: 70.21, sa2: 78.52},
         { paper: 'Rethinking the Effect of Data Augmentation in Adversarial Contrastive Learning ', link: 'https://openreview.net/forum?id=0qmwFNJyxCL&noteId=ZXhFXELOcQ', venue: 'ICLR 2023', 
         comment: '', ra1: 45.09, ca1: 68.67, sa1: 75.41, ra2: 44.65, ca2:	70.96, sa2:77.83},
         { paper: 'Decoupled Adversarial Contrastive Learning for Self-supervised Adversarial Robustness', link: 'https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136900716.pdf', venue: 'ECCV 2022', 

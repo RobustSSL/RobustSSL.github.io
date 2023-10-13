@@ -2,17 +2,17 @@
     // Sample data (you can replace this with your own data)
     const scheduleData_cifar10_stl10_SLF = [
         { paper: 'Enhancing Adversarial Contrastive Learning via Adversarial Invariant Regularization', link: 'https://arxiv.org/abs/2305.00374', venue: 'NeurIPS 2023', 
-        comment: '', ra1: 29.64, ca1: 0, sa1: 60.84, ra2:28.84, ca2:0 , sa2:57.35},
+        comment: '', ra1: 29.64, ca1: 0, sa1: 60.84, ra2:30.48, ca2:0 , sa2:56.43},
         { paper: 'Rethinking the Effect of Data Augmentation in Adversarial Contrastive Learning ', link: 'https://openreview.net/forum?id=0qmwFNJyxCL&noteId=ZXhFXELOcQ', venue: 'ICLR 2023', 
-        comment: '', ra1: 29.17, ca1: 0, sa1: 52.41, ra2: 28.53, ca2: 0, sa2: 56.33},
+        comment: '', ra1: 29.17, ca1: 0, sa1: 52.41, ra2: 30.18, ca2: 0, sa2: 57.06},
         { paper: 'When Does Contrastive Learning Preserve Adversarial Robustness from Pretraining to Finetuning?', link: 'https://arxiv.org/abs/2111.01124', venue: 'NeurIPS 2021', 
-        comment: '', ra1: 28.38, ca1: 0, sa1: 62.78, ra2: 27.50	, ca2: 0, sa2: 	65.15},
+        comment: '', ra1: 28.38, ca1: 0, sa1: 62.78, ra2: 28.14	, ca2: 0, sa2: 59.84},
         { paper: 'Robust Pre-Training by Adversarial Contrastive Learning', link: 'https://proceedings.neurips.cc/paper/2020/hash/ba7e36c43aff315c00ec2b8625e3b719-Abstract.html', venue: 'NeurIPS 2020', 
-        comment: '', ra1: 27.52, ca1: 0, sa1: 56.5, ra2: 25.46, ca2: 0, sa2: 	63.76},
+        comment: '', ra1: 27.52, ca1: 0, sa1: 56.5, ra2: 27.34, ca2: 0, sa2: 59.27},
         { paper: 'Adversarial Contrastive Learning via Asymmetric InfoNCE', link: 'https://arxiv.org/abs/2207.08374#:~:text=Contrastive%20learning%20(CL)%20has%20recently,other%2C%20yields%20better%20adversarial%20robustness', venue: 'ECCV 2022', 
-        comment: '', ra1: 27.18, ca1: 0, sa1: 65.75, ra2: 27.02	, ca2: 0, sa2: 	66.67},
+        comment: '', ra1: 27.18, ca1: 0, sa1: 65.75, ra2: 26.61	, ca2: 0, sa2: 	66.39},
         { paper: 'Decoupled Adversarial Contrastive Learning for Self-supervised Adversarial Robustness', link: 'https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136900716.pdf', venue: 'ECCV 2022', 
-        comment: '', ra1: 11.04, ca1: 0, sa1: 38.49, ra2: 26.62, ca2: 0, sa2: 63.75},
+        comment: '', ra1: 11.04, ca1: 0, sa1: 38.49, ra2: 26.21, ca2: 0, sa2: 64.61},
     ];			
 
     // Get the container element by its id
