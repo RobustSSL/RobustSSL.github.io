@@ -2,16 +2,16 @@
     // Sample data (you can replace this with your own data)
     const scheduleData_cifar100_stl10_AFF = [
         { paper: 'Enhancing Adversarial Contrastive Learning via Adversarial Invariant Regularization', link: 'https://arxiv.org/abs/2305.00374', venue: 'NeurIPS 2023', 
-        comment: '', ra1: 31.42, ca1: 0, sa1: 61.19, ra2:27.71, ca2:0 , sa2:51.34},
+        comment: '', ra1: 31.42, ca1: 0, sa1: 61.19, ra2: 31.50, ca2:0 , sa2:58.65},
         { paper: 'Rethinking the Effect of Data Augmentation in Adversarial Contrastive Learning ', link: 'https://openreview.net/forum?id=0qmwFNJyxCL&noteId=ZXhFXELOcQ', venue: 'ICLR 2023', 
-        comment: '', ra1: 31.17, ca1: 0, sa1: 58.85, ra2:26.24, ca2: 0, sa2:50.34},
-        { paper: 'Adversarial Contrastive Learning via Asymmetric InfoNCE', link: 'https://arxiv.org/abs/2207.08374#:~:text=Contrastive%20learning%20(CL)%20has%20recently,other%2C%20yields%20better%20adversarial%20robustness', venue: 'ECCV 2022', 
-        comment: '', ra1: 31.10, ca1: 0, sa1: 64.88, ra2:21.31, ca2: 0, sa2:52.28},
-        { paper: 'When Does Contrastive Learning Preserve Adversarial Robustness from Pretraining to Finetuning?', link: 'https://arxiv.org/abs/2111.01124', venue: 'NeurIPS 2021', 
-        comment: '', ra1: 30.50, ca1: 0, sa1: 61.24, ra2:20.71, ca2: 0, sa2:50.69},
+        comment: '', ra1: 31.17, ca1: 0, sa1: 58.85, ra2: 31.06, ca2: 0, sa2:58.90},
         { paper: 'Robust Pre-Training by Adversarial Contrastive Learning', link: 'https://proceedings.neurips.cc/paper/2020/hash/ba7e36c43aff315c00ec2b8625e3b719-Abstract.html', venue: 'NeurIPS 2020', 
-        comment: '', ra1: 28.76, ca1: 0, sa1: 56.23, ra2:25.34, ca2: 0, sa2:50.34},
-    ];			
+        comment: '', ra1: 28.76, ca1: 0, sa1: 56.23, ra2:28.94, ca2: 0, sa2:54.37},
+        { paper: 'Adversarial Contrastive Learning via Asymmetric InfoNCE', link: 'https://arxiv.org/abs/2207.08374#:~:text=Contrastive%20learning%20(CL)%20has%20recently,other%2C%20yields%20better%20adversarial%20robustness', venue: 'ECCV 2022', 
+        comment: '', ra1: 31.10, ca1: 0, sa1: 64.88, ra2:31.25, ca2: 0, sa2:56.35},
+        { paper: 'When Does Contrastive Learning Preserve Adversarial Robustness from Pretraining to Finetuning?', link: 'https://arxiv.org/abs/2111.01124', venue: 'NeurIPS 2021', 
+        comment: '', ra1: 30.50, ca1: 0, sa1: 61.24, ra2: 32.51, ca2: 0, sa2:60.91},
+    ];	
 
     // Get the container element by its id
     const scheduleContainer_cifar100_stl10_AFF = document.getElementById('scheduleContainer_cifar100_stl10_AFF');
