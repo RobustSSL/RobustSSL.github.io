@@ -10,7 +10,7 @@
         { paper: 'Robust Pre-Training by Adversarial Contrastive Learning', link: 'https://proceedings.neurips.cc/paper/2020/hash/ba7e36c43aff315c00ec2b8625e3b719-Abstract.html', venue: 'NeurIPS 2020', 
         comment: '', ra1: 27.52, ca1: 0, sa1: 56.5, ra2: 27.34, ca2: 0, sa2: 59.27},
         { paper: 'Adversarial Contrastive Learning via Asymmetric InfoNCE', link: 'https://arxiv.org/abs/2207.08374#:~:text=Contrastive%20learning%20(CL)%20has%20recently,other%2C%20yields%20better%20adversarial%20robustness', venue: 'ECCV 2022', 
-        comment: '', ra1: 27.18, ca1: 0, sa1: 65.75, ra2: 26.61	, ca2: 0, sa2: 	66.39},
+        comment: '', ra1: 27.18, ca1: 0, sa1: 65.75, ra2: 26.61	, ca2: 0, sa2: 66.39},
         { paper: 'Decoupled Adversarial Contrastive Learning for Self-supervised Adversarial Robustness', link: 'https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136900716.pdf', venue: 'ECCV 2022', 
         comment: '', ra1: 11.04, ca1: 0, sa1: 38.49, ra2: 26.21, ca2: 0, sa2: 64.61},
     ];			
