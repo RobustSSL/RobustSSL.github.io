@@ -34,6 +34,14 @@ h6 {
   font-family: "Calibri", san-serif;
 }
 
+h3 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -1786,6 +1794,10 @@ section {
   background-color: #f6f7fd;
 }
 
+.section-with-bg1 {
+  background-color: #f6f7fd;
+}
+
 #schedule {
   padding: 30px 0 30px 0;
   text-align: center;
@@ -1894,4 +1906,8 @@ section {
 #speaker .row {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+#cifar10-cifar10-SLF .row{
+
 }
