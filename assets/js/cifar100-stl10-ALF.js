@@ -68,7 +68,7 @@
             const col6 = document.createElement('div');
             col6.classList.add('col-1');
             col6.style.width = '5%'
-            col6.innerHTML = `<h5><center>${item.ra2.toFixed(2)}</center></h5>`;
+            col6.innerHTML = `<h5><center><b>${item.ra2.toFixed(2)}</b></center></h5>`;
     
             // const col7 = document.createElement('div');
             // col7.classList.add('col-1');
