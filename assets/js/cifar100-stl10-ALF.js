@@ -8,9 +8,9 @@
         { paper: 'Robust Pre-Training by Adversarial Contrastive Learning', link: 'https://proceedings.neurips.cc/paper/2020/hash/ba7e36c43aff315c00ec2b8625e3b719-Abstract.html', venue: 'NeurIPS 2020', 
         comment: '', ra1: 24.40, ca1: 0, sa1: 45.24, ra2:26.32, ca2: 0, sa2:52.48},
         { paper: 'Adversarial Contrastive Learning via Asymmetric InfoNCE', link: 'https://arxiv.org/abs/2207.08374#:~:text=Contrastive%20learning%20(CL)%20has%20recently,other%2C%20yields%20better%20adversarial%20robustness', venue: 'ECCV 2022', 
-        comment: '', ra1: 20.40, ca1: 0, sa1: 47.40, ra2:21.15, ca2: 0, sa2:51.32},
+        comment: 'Using ImageNet-1K pre-trained models', ra1: 20.40, ca1: 0, sa1: 47.40, ra2:21.15, ca2: 0, sa2:51.32},
         { paper: 'When Does Contrastive Learning Preserve Adversarial Robustness from Pretraining to Finetuning?', link: 'https://arxiv.org/abs/2111.01124', venue: 'NeurIPS 2021', 
-        comment: '', ra1: 19.60, ca1: 0, sa1: 44.54, ra2:20.64, ca2: 0, sa2:48.75},
+        comment: 'Using ImageNet-1K pre-trained models', ra1: 19.60, ca1: 0, sa1: 44.54, ra2:20.64, ca2: 0, sa2:48.75},
     ];			
 
         // Get the container element by its id

@@ -2,15 +2,15 @@
     // Sample data (you can replace this with your own data)
     const scheduleData_cifar10_stl10_SLF = [
         { paper: 'Enhancing Adversarial Contrastive Learning via Adversarial Invariant Regularization', link: 'https://arxiv.org/abs/2305.00374', venue: 'NeurIPS 2023', 
-        comment: '', ra1: 29.64, ca1: 0, sa1: 55.84, ra2:30.48, ca2:0 , sa2:57.36},
+        comment: '', ra1: 29.64, ca1: 0, sa1: 55.84, ra2:30.48, ca2:0 , sa2:56.36},
         { paper: 'Rethinking the Effect of Data Augmentation in Adversarial Contrastive Learning ', link: 'https://openreview.net/forum?id=0qmwFNJyxCL&noteId=ZXhFXELOcQ', venue: 'ICLR 2023', 
         comment: '', ra1: 29.17, ca1: 0, sa1: 52.41, ra2: 30.18, ca2: 0, sa2: 54.23},
         { paper: 'When Does Contrastive Learning Preserve Adversarial Robustness from Pretraining to Finetuning?', link: 'https://arxiv.org/abs/2111.01124', venue: 'NeurIPS 2021', 
-        comment: '', ra1: 28.38, ca1: 0, sa1: 62.78, ra2: 27.66	, ca2: 0, sa2: 64.39},
+        comment: 'Using ImageNet-1K pre-trained models', ra1: 28.38, ca1: 0, sa1: 62.78, ra2: 27.66	, ca2: 0, sa2: 64.39},
         { paper: 'Robust Pre-Training by Adversarial Contrastive Learning', link: 'https://proceedings.neurips.cc/paper/2020/hash/ba7e36c43aff315c00ec2b8625e3b719-Abstract.html', venue: 'NeurIPS 2020', 
         comment: '', ra1: 27.52, ca1: 0, sa1: 56.5, ra2: 27.34, ca2: 0, sa2: 59.27},
         { paper: 'Adversarial Contrastive Learning via Asymmetric InfoNCE', link: 'https://arxiv.org/abs/2207.08374#:~:text=Contrastive%20learning%20(CL)%20has%20recently,other%2C%20yields%20better%20adversarial%20robustness', venue: 'ECCV 2022', 
-        comment: '', ra1: 27.18, ca1: 0, sa1: 65.75, ra2: 27.25	, ca2: 0, sa2: 66.69},
+        comment: 'Using ImageNet-1K pre-trained models', ra1: 27.18, ca1: 0, sa1: 65.75, ra2: 27.25	, ca2: 0, sa2: 66.69},
         { paper: 'Decoupled Adversarial Contrastive Learning for Self-supervised Adversarial Robustness', link: 'https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136900716.pdf', venue: 'ECCV 2022', 
         comment: '', ra1: 11.04, ca1: 0, sa1: 38.49, ra2: 27.40, ca2: 0, sa2: 63.92},
     ];			

@@ -8,9 +8,9 @@
         { paper: 'Robust Pre-Training by Adversarial Contrastive Learning', link: 'https://proceedings.neurips.cc/paper/2020/hash/ba7e36c43aff315c00ec2b8625e3b719-Abstract.html', venue: 'NeurIPS 2020', 
         comment: '', ra1: 28.16, ca1: 0, sa1: 60.86, ra2: 30.05, ca2: 0, sa2: 57.73},
         { paper: 'When Does Contrastive Learning Preserve Adversarial Robustness from Pretraining to Finetuning?', link: 'https://arxiv.org/abs/2111.01124', venue: 'NeurIPS 2021', 
-        comment: '', ra1: 27.88, ca1: 0, sa1: 58.73, ra2: 29.30, ca2: 0, sa2: 62.71},
+        comment: 'Using ImageNet-1K pre-trained models', ra1: 27.88, ca1: 0, sa1: 58.73, ra2: 29.30, ca2: 0, sa2: 62.71},
         { paper: 'Adversarial Contrastive Learning via Asymmetric InfoNCE', link: 'https://arxiv.org/abs/2207.08374#:~:text=Contrastive%20learning%20(CL)%20has%20recently,other%2C%20yields%20better%20adversarial%20robustness', venue: 'ECCV 2022', 
-        comment: '', ra1: 27.24, ca1: 0, sa1: 51.81, ra2: 27.89, ca2: 0, sa2: 63.78},
+        comment: 'Using ImageNet-1K pre-trained models', ra1: 27.24, ca1: 0, sa1: 51.81, ra2: 27.89, ca2: 0, sa2: 63.78},
         { paper: 'Decoupled Adversarial Contrastive Learning for Self-supervised Adversarial Robustness', link: 'https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136900716.pdf', venue: 'ECCV 2022', 
         comment: '', ra1: 12.70, ca1: 0, sa1: 39.41, ra2: 27.22, ca2: 0, sa2: 59.21},
     ];			

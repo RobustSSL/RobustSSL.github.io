@@ -2,11 +2,11 @@
     // Sample data (you can replace this with your own data)
     const scheduleData_stl10_stl10_SLF = [
         { paper: 'Enhancing Adversarial Contrastive Learning via Adversarial Invariant Regularization', link: 'https://arxiv.org/abs/2305.00374', venue: 'NeurIPS 2023', 
-        comment: '*Using post-processing', ra1: 47.90, ca1: 0, sa1: 71.44, ra2:48.4, ca2:0 , sa2:69.51},
+        comment: 'Using post-processing', ra1: 47.90, ca1: 0, sa1: 71.44, ra2:48.4, ca2:0 , sa2:69.51},
         { paper: 'Enhancing Adversarial Contrastive Learning via Adversarial Invariant Regularization', link: 'https://arxiv.org/abs/2305.00374', venue: 'NeurIPS 2023', 
         comment: '', ra1: 47.71, ca1: 0, sa1: 72.25, ra2:47.56, ca2: 0, sa2: 71.62},
         { paper: 'Rethinking the Effect of Data Augmentation in Adversarial Contrastive Learning ', link: 'https://openreview.net/forum?id=0qmwFNJyxCL&noteId=ZXhFXELOcQ', venue: 'ICLR 2023', 
-        comment: '*Using post-processing', ra1: 47.24, ca1: 0, sa1: 70.91, ra2: 47.21, ca2: 0, sa2: 70.38},
+        comment: 'Using post-processing', ra1: 47.24, ca1: 0, sa1: 70.91, ra2: 47.21, ca2: 0, sa2: 70.38},
         { paper: 'Rethinking the Effect of Data Augmentation in Adversarial Contrastive Learning ', link: 'https://openreview.net/forum?id=0qmwFNJyxCL&noteId=ZXhFXELOcQ', venue: 'ICLR 2023', 
         comment: '', ra1: 46.61, ca1: 0, sa1: 69.56, ra2: 46.83, ca2:0, sa2:69.79},
         { paper: 'Robust Pre-Training by Adversarial Contrastive Learning', link: 'https://proceedings.neurips.cc/paper/2020/hash/ba7e36c43aff315c00ec2b8625e3b719-Abstract.html', venue: 'NeurIPS 2020', 
