@@ -17,9 +17,10 @@
         comment: 'Using ImageNet-1K pre-trained models', ra1: 49.61, ca1: 73.91, sa1: 83.00, ra2: 43.98, ca2: 73.14, sa2: 80.31},
         { paper: 'Robust Pre-Training by Adversarial Contrastive Learning', link: 'https://proceedings.neurips.cc/paper/2020/hash/ba7e36c43aff315c00ec2b8625e3b719-Abstract.html', venue: 'NeurIPS 2020', 
         comment: '', ra1: 49.60, ca1: 72.50, sa1: 81.25, ra2: 41.46, ca2: 	69.03, sa2: 76.37},
+        { paper: 'Adversarial Self-Supervised Contrastive Learning', link: 'https://proceedings.neurips.cc/paper/2020/hash/1f1baa5b8edac74eb4eaa329f14a0361-Abstract.html', venue: 'NeurIPS 2020', 
+        comment: '', ra1: 45.02, ca1: 0, sa1: 78.51, ra2: 37.92	, ca2: 72.65, sa2: 	80.65},
         { paper: 'Decoupled Adversarial Contrastive Learning for Self-supervised Adversarial Robustness', link: 'https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136900716.pdf', venue: 'ECCV 2022', 
         comment: '', ra1: 44.96, ca1: 69.29, sa1: 78.29, ra2:43.31, ca2: 72.15, sa2: 81.07}
-        
     ];
 
    // Get the container element by its id
@@ -65,9 +66,13 @@
        col3.innerHTML = `<h5><center><b>${item.ra1.toFixed(2)}</b></center></h5>`;
 
        const col4 = document.createElement('div');
-       col4.classList.add('col-1');
-       col4.style.width = '5%'
-       col4.innerHTML = `<h5><center>${item.ca1.toFixed(2)}</center></h5>`;
+        col4.classList.add('col-1');
+        col4.style.width = '5%'
+        if (item.ca1 === 0) {
+            col4.innerHTML = `<h5><center> - </center></h5>`;
+          } else {
+            col4.innerHTML = `<h5><center>${item.ca1.toFixed(2)}</center></h5>`;
+          }
 
        const col5 = document.createElement('div');
        col5.classList.add('col-1');

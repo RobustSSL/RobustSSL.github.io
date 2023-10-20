@@ -13,6 +13,8 @@
         comment: '', ra1: 41.62, ca1: 0, sa1: 69.06, ra2: 37.92	, ca2: 72.65, sa2: 	80.65},
         { paper: 'Robust Pre-Training by Adversarial Contrastive Learning', link: 'https://proceedings.neurips.cc/paper/2020/hash/ba7e36c43aff315c00ec2b8625e3b719-Abstract.html', venue: 'NeurIPS 2020', 
         comment: '', ra1: 35.80, ca1: 0, sa1: 67.90, ra2: 33.32, ca2: 0, sa2: 69.66},
+        { paper: 'Adversarial Self-Supervised Contrastive Learning', link: 'https://proceedings.neurips.cc/paper/2020/hash/1f1baa5b8edac74eb4eaa329f14a0361-Abstract.html', venue: 'NeurIPS 2020', 
+        comment: '', ra1: 26.51, ca1: 0, sa1: 78.19, ra2: 37.92	, ca2: 72.65, sa2: 	80.65}
     ];						
 
     // Get the container element by its id
