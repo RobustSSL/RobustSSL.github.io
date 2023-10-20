@@ -16,7 +16,7 @@
         { paper: 'Robust Pre-Training by Adversarial Contrastive Learning', link: 'https://proceedings.neurips.cc/paper/2020/hash/ba7e36c43aff315c00ec2b8625e3b719-Abstract.html', venue: 'NeurIPS 2020', 
         comment: '', ra1: 24.78, ca1: 47.00, sa1: 57.74, ra2:18.85	, ca2: 37.22, sa2: 	44.22},
         { paper: 'Efficient Adversarial Contrastive Learning via Robustness-Aware Coreset Selection', link: 'https://arxiv.org/pdf/2302.03857.pdf', venue: 'NeurIPS 2023', 
-        comment: '', ra1: , ca1: , sa1: 77.14, ra2: 37.92	, ca2: 72.65, sa2: 	80.65},
+        comment: '', ra1: 24.77, ca1: 45.94, sa1: 56.92, ra2: 37.92	, ca2: 72.65, sa2: 	80.65},
        
     ];								
 
