@@ -37,12 +37,12 @@
         col1.innerHTML = `<h5><center>${index+1}</center></h5>`;
 
         const col2 = document.createElement('div');
-        col2.classList.add('col');
-        if (!!item.comment) {
-            col2.innerHTML = `<h5><center><a href=${item.link}>${item.paper}</a> <br> <small><sup>*</sup>${item.comment}</small>  </center></h5>`;
-        }else {
-            col2.innerHTML = `<h5><center><a href=${item.link}>${item.paper}</a> </center></h5>`;
-        }
+         col2.classList.add('col');
+         if (!!item.comment) {
+             col2.innerHTML = `<h5><center><a style="color: #0E1B8E" href=${item.link}>${item.paper}</a> <br> <small><sup>*</sup>${item.comment}</small>  </center></h5>`;
+         }else {
+             col2.innerHTML = `<h5><center><a style="color: #0E1B8E" href=${item.link}>${item.paper}</a> </center></h5>`;
+         }
         
         const col11 = document.createElement('div');
         col11.classList.add('col-1');
