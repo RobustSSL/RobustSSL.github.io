@@ -9,6 +9,8 @@
         comment: 'Using post-processing', ra1: 47.24, ca1: 0, sa1: 70.91, ra2: 47.21, ca2: 0, sa2: 70.38},
         { paper: 'Rethinking the Effect of Data Augmentation in Adversarial Contrastive Learning ', link: 'https://openreview.net/forum?id=0qmwFNJyxCL&noteId=ZXhFXELOcQ', venue: 'ICLR 2023', 
         comment: '', ra1: 46.61, ca1: 0, sa1: 69.56, ra2: 46.83, ca2:0, sa2:69.79},
+        { paper: 'Efficient Adversarial Contrastive Learning via Robustness-Aware Coreset Selection', link: 'https://arxiv.org/pdf/2302.03857.pdf', venue: 'NeurIPS 2023', 
+        comment: '', ra1: 41.62, ca1: 0, sa1: 69.06, ra2: 37.92	, ca2: 72.65, sa2: 	80.65},
         { paper: 'Robust Pre-Training by Adversarial Contrastive Learning', link: 'https://proceedings.neurips.cc/paper/2020/hash/ba7e36c43aff315c00ec2b8625e3b719-Abstract.html', venue: 'NeurIPS 2020', 
         comment: '', ra1: 35.80, ca1: 0, sa1: 67.90, ra2: 33.32, ca2: 0, sa2: 69.66},
     ];						

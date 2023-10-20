@@ -2,9 +2,11 @@
     // Sample data (you can replace this with your own data)
     const scheduleData_cifar100_stl10_SLF = [
         { paper: 'Enhancing Adversarial Contrastive Learning via Adversarial Invariant Regularization', link: 'https://arxiv.org/abs/2305.00374', venue: 'NeurIPS 2023', 
-        comment: '', ra1: 23.24, ca1: 0, sa1: 48.20, ra2:24.05, ca2:0 , sa2:50.82},
+        comment: '', ra1: 23.24, ca1: 0, sa1: 48.20, ra2:23.49, ca2:0 , sa2:51.82},
         { paper: 'Rethinking the Effect of Data Augmentation in Adversarial Contrastive Learning ', link: 'https://openreview.net/forum?id=0qmwFNJyxCL&noteId=ZXhFXELOcQ', venue: 'ICLR 2023', 
-        comment: '', ra1: 23.17, ca1: 0, sa1: 47.54, ra2: 23.86, ca2: 0, sa2:49.91},
+        comment: '', ra1: 23.17, ca1: 0, sa1: 47.54, ra2: 23.31, ca2: 0, sa2:50.93},
+        { paper: 'Efficient Adversarial Contrastive Learning via Robustness-Aware Coreset Selection', link: 'https://arxiv.org/pdf/2302.03857.pdf', venue: 'NeurIPS 2023', 
+        comment: '', ra1: 22.55, ca1: 0.0, sa1: 51.56, ra2: 23.62, ca2: 72.65, sa2: 52.86},
         { paper: 'Robust Pre-Training by Adversarial Contrastive Learning', link: 'https://proceedings.neurips.cc/paper/2020/hash/ba7e36c43aff315c00ec2b8625e3b719-Abstract.html', venue: 'NeurIPS 2020', 
         comment: '', ra1: 21.91, ca1: 0, sa1: 47.59, ra2: 23.55, ca2: 0, sa2:50.15},
         { paper: 'Adversarial Contrastive Learning via Asymmetric InfoNCE', link: 'https://arxiv.org/abs/2207.08374#:~:text=Contrastive%20learning%20(CL)%20has%20recently,other%2C%20yields%20better%20adversarial%20robustness', venue: 'ECCV 2022', 

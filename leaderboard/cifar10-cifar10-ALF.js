@@ -7,6 +7,8 @@
         comment: 'Using post-processing', ra1: 47.98, ca1: 70.89, sa1: 78.81, ra2: 47.38, ca2: 73.57, sa2:	81.42},
         { paper: 'Enhancing Adversarial Contrastive Learning via Adversarial Invariant Regularization', link: 'https://arxiv.org/abs/2305.00374', venue: 'NeurIPS 2023', 
         comment: '', ra1: 46.14, ca1: 69.97, sa1: 77.42, ra2: 46.12, ca2: 70.93, sa2: 79.11},
+        { paper: 'Efficient Adversarial Contrastive Learning via Robustness-Aware Coreset Selection', link: 'https://arxiv.org/pdf/2302.03857.pdf', venue: 'NeurIPS 2023', 
+        comment: '', ra1: 45.75, ca1: 67.84, sa1: 74.95, ra2: 37.92	, ca2: 72.65, sa2: 	80.65},
         { paper: 'Rethinking the Effect of Data Augmentation in Adversarial Contrastive Learning ', link: 'https://openreview.net/forum?id=0qmwFNJyxCL&noteId=ZXhFXELOcQ', venue: 'ICLR 2023', 
         comment: '', ra1: 45.67, ca1: 66.69, sa1: 72.97, ra2: 45.64, ca2: 70.99, sa2: 78.10},
         { paper: 'When Does Contrastive Learning Preserve Adversarial Robustness from Pretraining to Finetuning?', link: 'https://arxiv.org/abs/2111.01124', venue: 'NeurIPS 2021', 
@@ -15,9 +17,9 @@
         comment: 'Using ImageNet-1K pre-trained models', ra1: 43.28, ca1: 71.61, sa1: 80.30, ra2: 44.10, ca2: 72.64, sa2: 81.29},
         { paper: 'Decoupled Adversarial Contrastive Learning for Self-supervised Adversarial Robustness', link: 'https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136900716.pdf', venue: 'ECCV 2022', 
         comment: '', ra1: 41.99, ca1: 71.66, sa1: 77.71, ra2:43.31, ca2: 72.15, sa2: 81.07},
-
         { paper: 'Robust Pre-Training by Adversarial Contrastive Learning', link: 'https://proceedings.neurips.cc/paper/2020/hash/ba7e36c43aff315c00ec2b8625e3b719-Abstract.html', venue: 'NeurIPS 2020', 
         comment: '', ra1: 40.60, ca1: 68.56, sa1: 75.53, ra2: 41.46, ca2: 	69.03, sa2: 76.37},
+        
     ];
 
      // Get the container element by its id

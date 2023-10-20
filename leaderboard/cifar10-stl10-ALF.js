@@ -2,9 +2,11 @@
     // Sample data (you can replace this with your own data)
     const scheduleData_cifar10_stl10_ALF = [
         { paper: 'Enhancing Adversarial Contrastive Learning via Adversarial Invariant Regularization', link: 'https://arxiv.org/abs/2305.00374', venue: 'NeurIPS 2023', 
-        comment: '', ra1: 31.24, ca1: 0, sa1: 57.14, ra2: 31.81, ca2:0 , sa2: 57.40},
+        comment: '', ra1: 31.24, ca1: 0, sa1: 57.14, ra2: 31.65, ca2: 0, sa2: 59.44},
+        { paper: 'Efficient Adversarial Contrastive Learning via Robustness-Aware Coreset Selection', link: 'https://arxiv.org/pdf/2302.03857.pdf', venue: 'NeurIPS 2023', 
+        comment: '', ra1: 30.36, ca1: 0, sa1: 56.56, ra2: 31.60	,ca2: 72.65, sa2: 60.22},
         { paper: 'Rethinking the Effect of Data Augmentation in Adversarial Contrastive Learning ', link: 'https://openreview.net/forum?id=0qmwFNJyxCL&noteId=ZXhFXELOcQ', venue: 'ICLR 2023', 
-        comment: '', ra1: 29.59, ca1: 0, sa1: 49.55, ra2: 31.72, ca2: 0, sa2: 57.30},
+        comment: '', ra1: 29.59, ca1: 0, sa1: 49.55, ra2: 31.34, ca2: 0, sa2: 57.74},
         { paper: 'Robust Pre-Training by Adversarial Contrastive Learning', link: 'https://proceedings.neurips.cc/paper/2020/hash/ba7e36c43aff315c00ec2b8625e3b719-Abstract.html', venue: 'NeurIPS 2020', 
         comment: '', ra1: 28.16, ca1: 0, sa1: 60.86, ra2: 30.05, ca2: 0, sa2: 57.73},
         { paper: 'When Does Contrastive Learning Preserve Adversarial Robustness from Pretraining to Finetuning?', link: 'https://arxiv.org/abs/2111.01124', venue: 'NeurIPS 2021', 
@@ -13,6 +15,7 @@
         comment: 'Using ImageNet-1K pre-trained models', ra1: 27.24, ca1: 0, sa1: 51.81, ra2: 27.89, ca2: 0, sa2: 63.78},
         { paper: 'Decoupled Adversarial Contrastive Learning for Self-supervised Adversarial Robustness', link: 'https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136900716.pdf', venue: 'ECCV 2022', 
         comment: '', ra1: 12.70, ca1: 0, sa1: 39.41, ra2: 27.22, ca2: 0, sa2: 59.21},
+        
     ];			
 
     // Get the container element by its id

@@ -2,9 +2,11 @@
     // Sample data (you can replace this with your own data)
     const scheduleData_cifar10_stl10_SLF = [
         { paper: 'Enhancing Adversarial Contrastive Learning via Adversarial Invariant Regularization', link: 'https://arxiv.org/abs/2305.00374', venue: 'NeurIPS 2023', 
-        comment: '', ra1: 29.64, ca1: 0, sa1: 55.84, ra2:30.48, ca2:0 , sa2:56.36},
+        comment: '', ra1: 29.64, ca1: 0, sa1: 55.84, ra2:29.75, ca2:0 , sa2: 60.53},
         { paper: 'Rethinking the Effect of Data Augmentation in Adversarial Contrastive Learning ', link: 'https://openreview.net/forum?id=0qmwFNJyxCL&noteId=ZXhFXELOcQ', venue: 'ICLR 2023', 
-        comment: '', ra1: 29.17, ca1: 0, sa1: 52.41, ra2: 30.18, ca2: 0, sa2: 54.23},
+        comment: '', ra1: 29.17, ca1: 0, sa1: 52.41, ra2: 29.68, ca2: 0, sa2: 58.24},
+        { paper: 'Efficient Adversarial Contrastive Learning via Robustness-Aware Coreset Selection', link: 'https://arxiv.org/pdf/2302.03857.pdf', venue: 'NeurIPS 2023', 
+        comment: '', ra1: 28.66, ca1: 0, sa1: 61.06, ra2: 29.00	, ca2: 72.65, sa2: 63.31},
         { paper: 'When Does Contrastive Learning Preserve Adversarial Robustness from Pretraining to Finetuning?', link: 'https://arxiv.org/abs/2111.01124', venue: 'NeurIPS 2021', 
         comment: 'Using ImageNet-1K pre-trained models', ra1: 28.38, ca1: 0, sa1: 62.78, ra2: 27.66	, ca2: 0, sa2: 64.39},
         { paper: 'Robust Pre-Training by Adversarial Contrastive Learning', link: 'https://proceedings.neurips.cc/paper/2020/hash/ba7e36c43aff315c00ec2b8625e3b719-Abstract.html', venue: 'NeurIPS 2020', 
@@ -13,6 +15,7 @@
         comment: 'Using ImageNet-1K pre-trained models', ra1: 27.18, ca1: 0, sa1: 65.75, ra2: 27.25	, ca2: 0, sa2: 66.69},
         { paper: 'Decoupled Adversarial Contrastive Learning for Self-supervised Adversarial Robustness', link: 'https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136900716.pdf', venue: 'ECCV 2022', 
         comment: '', ra1: 11.04, ca1: 0, sa1: 38.49, ra2: 27.40, ca2: 0, sa2: 63.92},
+       
     ];			
 
     // Get the container element by its id

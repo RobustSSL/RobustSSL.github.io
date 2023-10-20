@@ -17,6 +17,8 @@
         comment: '', ra1: 49.60, ca1: 72.50, sa1: 81.25, ra2: 41.46, ca2: 	69.03, sa2: 76.37},
         { paper: 'Decoupled Adversarial Contrastive Learning for Self-supervised Adversarial Robustness', link: 'https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136900716.pdf', venue: 'ECCV 2022', 
         comment: '', ra1: 44.96, ca1: 69.29, sa1: 78.29, ra2:43.31, ca2: 72.15, sa2: 81.07}
+        { paper: 'Efficient Adversarial Contrastive Learning via Robustness-Aware Coreset Selection', link: 'https://arxiv.org/pdf/2302.03857.pdf', venue: 'NeurIPS 2023', 
+        comment: '', ra1: , ca1: , sa1: 77.14, ra2: 37.92	, ca2: 72.65, sa2: 	80.65},
     ];
 
    // Get the container element by its id
