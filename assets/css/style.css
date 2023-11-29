@@ -15,7 +15,7 @@ body {
   width: 100%;
 }
 
-.container { min-width: 1500px  !important; }
+.container { min-width: 100px  !important; }
 
 a {
   text-decoration: none;
