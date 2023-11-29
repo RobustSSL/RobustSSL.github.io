@@ -15,6 +15,8 @@ body {
   width: 100%;
 }
 
+.container { max-width: 1000px  !important; }
+
 a {
   text-decoration: none;
   color: #8fc04e;
@@ -85,12 +87,6 @@ h5 {
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .grid {
-    grid-template-columns: repeat(3, 100px);
   }
 }
 
