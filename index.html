@@ -31,6 +31,7 @@
   <!-- <meta name="viewport" content="width=device-width, initial-scale=0, maximum-scale=0, user-scalable=yes,shrink-to-fit=no,etaametentitial-scale=1.0"> -->
   <!-- <meta name="viewport" content="width=device-width,height=device-height,inital-scale=0.0,maximum-scale=0.0,user-scalable=yes,shrink-to-fit=no"> -->
   <meta name="viewport" content="1024">
+  <script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
 
   <!-- =======================================================
   * Template Name: Remember
@@ -49,19 +50,11 @@
 
       <div class="logo">
         <h1 class="text-light"><a href="">RobustSSL Benchmark</a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <h2> </h2> -->
-        <!-- <a href="index.html"><img src="assets/img/ncript_logo.svg" alt="" class="img-fluid"></a> -->
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#about">Leaderboards</a></li>
-          <!-- <li><a class="nav-link scrollto" href="#about">Model Zoo</a></li> -->
-          <!-- <li><a class="nav-link scrollto " href="#schedule">Program</a></li>
-          <li><a class="nav-link scrollto" href="#speakers">Speakers</a></li>
-          <li><a class="nav-link scrollto" href="#discussion">Panel</a></li>
-          <li><a class="nav-link scrollto" href="#venue">Venue</a></li> -->
           <li><a class="nav-link scrollto" href="https://github.com/GodXuxilie/RobustSSL_Benchmark">Model Zoo</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
@@ -71,31 +64,15 @@
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <!-- <section id="hero", class="hero"> -->
-    <!-- <div class="hero-container" data-aos="fade-up"> -->
-      <!-- <h1>Benchmarking Robustness Transferability <br> of Robust Self-Supervised Learning (RobustSSL)</h1> -->
-      <!-- <h2>April 20th, 2023<br> NUSS Kent Ridge Guild House, NUS, Singapore</h2> -->
-      <!-- <a href="https://docs.google.com/forms/d/e/1FAIpQLScx5TXTJ77ruQ07kd9aJU7Nz-Ri5_HeV2mUuoibQwMajG7y_Q/viewform" class="btn-get-started scrollto">Registration Link</a> -->
-    <!-- </div> -->
-  <!-- </section> -->
-  <!-- End Hero -->
-
   <main id="main">
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container">
         <div class="section-title" data-aos="zoom-in">
           <h2>RobustSSL Benchmark</a></h2>
-          <!-- <h3>Introduction to <span>N-CRiPT</span></h3> -->
           <br>
-          <!-- <a href="https://docs.google.com/forms/d/e/1FAIpQLScx5TXTJ77ruQ07kd9aJU7Nz-Ri5_HeV2mUuoibQwMajG7y_Q/viewform" class="btn-get-started scrollto">GitHub</a> -->
         </div>
         <div class="row">
-          <!-- <div class="col-xl-6 col-lg-3 image-box d-flex justify-content-center align-items-stretch" data-aos="zoom-in">
-            <img src="./assets/img/ncript-bg.jpeg" width=120% alt="some_text">
-          </div> -->
-          <!-- <div class="col-xl-6 col-lg-4 d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5"> -->
             <div class="box-heading" data-aos="fade-up">
               <h3>Introduction to Robust Self-Supervised Learning (RobustSSL) Benchmark</h3>
               <p style="font-size: 18px;"> The wide-ranging applications of foundation models, espeically in safety-critical areas, necessitates the robust self-supervised learning (RobustSSL) which can yield adversarially robust foundation models. 
@@ -104,7 +81,6 @@
                  </p>
               <h3>Performance Mesurement</h3>
               <p style="font-size: 18px;">The code for conducting fine-tuning and evaluation as well as the model zoo are provided in <a href="https://github.com/GodXuxilie/RobustSSL_Benchmark">GitHub</a>.</p>
-              <!-- We use the following three fine-tuning modes to provide a comprehensive evaluation of the transferability: -->
               <h3 style="font-size: 20px;">Fine-Tuning Modes</h3>
               <ul style="font-size: 18px;">
                 <li>Standard linear fine-tuning (<b>SLF</b>): only standardly fine-tuning the classifier while freezing the feature extractor.
@@ -151,28 +127,20 @@
         </div>
 
         <div id="cifar10-cifar10-SLF" class="row section-with-bg">
-          <!-- <center><h3 style="font-size: 25px;"><u>Performance Evaluated via SLF</u></h3></center> -->
           <div class="row schedule-item" style="background-color: #f6e7e7; margin-left: 0.01cm;" >
-            <!-- <div class="col-1" style="width: 5%;"><h5><center></center></h5></div> -->
-            <!-- <div class="col"><h5><center><b></b></center></h5></div> -->
-            <!-- <div class="col-1" style="width: 13%;"><h5><center></center></h5></div> -->
             <div class="col"><h5><center><b>Standard Linear Fine-Tuning (SLF)</b></center></h5></div>
-            <div class="col-3" style="width: 24%;"><h5><center><b>Vanilla Fine-Tuning</b></center></h5></div>
-            <!-- <div class="col-4" style="width: 24%;"><h5><center><b>AutoLoRa</b></center></h5>  <br> -->
-            <!-- </div> -->
+            <div class="col-3" style="width: 32%;"><h5><center><b>Vanilla Fine-Tuning</b></center></h5></div>
             <br>
           </div>
-        
-        <div class="row schedule-item" >
-          <div class="col-1" style="width: 5%;" ><h5><center><b>Rank</b></center></h5></div>
-          <div class="col"><h5><center><b>Paper</b></center></h5></div>
-          <div class="col-1" style="width: 13%;"><h5><center><b>Venue</b></center></h5></div>
-          <!-- <div class="col-1" style="width: 6%;"><h5><center><b>Mean </b></center></h5></div> -->
-          <div class="col-1" style="width: 8%;"><h5><center><b>Robust Accuracy</b></center></h5></div>
-          <div class="col-1" style="width: 8%;"><h5><center><b>Corruption Accuracy </b></center></h5></div>
-          <div class="col-1" style="width: 8%;"><h5><center><b>Standard Accuracy </b></center></h5></div>
-          <br>
-        </div>
+          <div class="row schedule-item" >
+            <div class="col-1" style="width: 3%;" ><h5><center><b>Rank</b></center></h5></div>
+            <div class="col"><h5><center><b>Paper</b></center></h5></div>
+            <div class="col-1" style="width: 9%;"><h5><center><b>Venue</b></center></h5></div>
+            <div class="col-1" style="width: 10%;"><h5><center><b>Robust Accuracy</b></center></h5></div>
+            <div class="col-1" style="width: 12%;"><h5><center><b>Corruption Accuracy </b></center></h5></div>
+            <div class="col-1" style="width: 10%;"><h5><center><b>Standard Accuracy </b></center></h5></div>
+            <br>
+          </div>
         
         <div id="scheduleContainer"></div>
         <script src="./leaderboard/cifar10-cifar10-SLF.js"></script>
@@ -180,54 +148,39 @@
         <br>
 
         <div id="cifar10-cifar10-ALF"  class="row section-with-bg ">
-          <!-- <center><h3 style="font-size: 25px;"><u>Performance Evaluated via ALF</u></h3></center> -->
-        
           <div class="row schedule-item" style="background-color: #f6e7e7; margin-left: 0.01cm;" >
-            <!-- <div class="col-1" style="width: 5%;"><h5><center></center></h5></div> -->
-            <!-- <div class="col"><h5><center><b></b></center></h5></div> -->
-            <!-- <div class="col-1" style="width: 13%;"><h5><center></center></h5></div> -->
             <div class="col"><h5><center><b>Adversarial Linear Fine-Tuning (ALF)</b></center></h5></div>
-            <div class="col-3" style="width: 24%;"><h5><center><b>Vanilla Fine-Tuning</b></center></h5></div>
-            <!-- <div class="col-4" style="width: 24%;"><h5><center><b>AutoLoRa</b></center></h5>  <br> -->
-            <!-- </div> -->
+            <div class="col-3" style="width: 32%;"><h5><center><b>Vanilla Fine-Tuning</b></center></h5></div>
             <br>
           </div>
           <div class="row schedule-item" >
-            <div class="col-1" style="width: 5%;" ><h5><center><b>Rank</b></center></h5></div>
+            <div class="col-1" style="width: 3%;" ><h5><center><b>Rank</b></center></h5></div>
             <div class="col"><h5><center><b>Paper</b></center></h5></div>
-            <div class="col-1" style="width: 13%;"><h5><center><b>Venue</b></center></h5></div>
-            <!-- <div class="col-1" style="width: 6%;"><h5><center><b>Mean </b></center></h5></div> -->
-            <div class="col-1" style="width: 8%;"><h5><center><b>Robust Accuracy</b></center></h5></div>
-            <div class="col-1" style="width: 8%;"><h5><center><b>Corruption Accuracy </b></center></h5></div>
-            <div class="col-1" style="width: 8%;"><h5><center><b>Standard Accuracy </b></center></h5></div>
+            <div class="col-1" style="width: 9%;"><h5><center><b>Venue</b></center></h5></div>
+            <div class="col-1" style="width: 10%;"><h5><center><b>Robust Accuracy</b></center></h5></div>
+            <div class="col-1" style="width: 12%;"><h5><center><b>Corruption Accuracy </b></center></h5></div>
+            <div class="col-1" style="width: 10%;"><h5><center><b>Standard Accuracy </b></center></h5></div>
             <br>
           </div>
         
-        <div id="scheduleContainer_ALF"></div>
-        <script src="./leaderboard/cifar10-cifar10-ALF.js"></script>
-      </div>
+          <div id="scheduleContainer_ALF"></div>
+            <script src="./leaderboard/cifar10-cifar10-ALF.js"></script>
+          </div>
         <br>
 
         <div id="cifar10-cifar10-AFF"class="row section-with-bg ">
-          <!-- <center><h3  style="font-size: 25px;" ><u>Performance Evaluated via AFF</u></h3></center> -->
           <div class="row schedule-item" style="background-color: #f6e7e7; margin-left: 0.01cm;" >
-            <!-- <div class="col-1" style="width: 5%;"><h5><center></center></h5></div> -->
-            <!-- <div class="col"><h5><center><b></b></center></h5></div> -->
-            <!-- <div class="col-1" style="width: 13%;"><h5><center></center></h5></div> -->
             <div class="col"><h5><center><b>Adversarial Full Fine-Tuning (AFF)</b></center></h5></div>
-            <div class="col-3" style="width: 24%;"><h5><center><b>Vanilla Fine-Tuning</b></center></h5></div>
-            <!-- <div class="col-4" style="width: 24%;"><h5><center><b>AutoLoRa</b></center></h5>  <br> -->
-            <!-- </div> -->
+            <div class="col-3" style="width: 32%;"><h5><center><b>Vanilla Fine-Tuning</b></center></h5></div>
             <br>
           </div>
           <div class="row schedule-item" >
-            <div class="col-1" style="width: 5%;" ><h5><center><b>Rank</b></center></h5></div>
+            <div class="col-1" style="width: 3%;" ><h5><center><b>Rank</b></center></h5></div>
             <div class="col"><h5><center><b>Paper</b></center></h5></div>
-            <div class="col-1" style="width: 13%;"><h5><center><b>Venue</b></center></h5></div>
-            <!-- <div class="col-1" style="width: 6%;"><h5><center><b>Mean </b></center></h5></div> -->
-            <div class="col-1" style="width: 8%;"><h5><center><b>Robust Accuracy</b></center></h5></div>
-            <div class="col-1" style="width: 8%;"><h5><center><b>Corruption Accuracy </b></center></h5></div>
-            <div class="col-1" style="width: 8%;"><h5><center><b>Standard Accuracy </b></center></h5></div>
+            <div class="col-1" style="width: 9%;"><h5><center><b>Venue</b></center></h5></div>
+            <div class="col-1" style="width: 10%;"><h5><center><b>Robust Accuracy</b></center></h5></div>
+            <div class="col-1" style="width: 12%;"><h5><center><b>Corruption Accuracy </b></center></h5></div>
+            <div class="col-1" style="width: 10%;"><h5><center><b>Standard Accuracy </b></center></h5></div>
             <br>
           </div>
         
@@ -251,23 +204,17 @@
 
             <div id="cifar100-cifar100-SLF"  class="row section-with-bg">
               <div class="row schedule-item" style="background-color: #f6e7e7; margin-left: 0.01cm;" >
-                <!-- <div class="col-1" style="width: 5%;"><h5><center></center></h5></div> -->
-                <!-- <div class="col"><h5><center><b></b></center></h5></div> -->
-                <!-- <div class="col-1" style="width: 13%;"><h5><center></center></h5></div> -->
                 <div class="col"><h5><center><b>Standard Linear Fine-Tuning (SLF)</b></center></h5></div>
-                <div class="col-3" style="width: 24%;"><h5><center><b>Vanilla Fine-Tuning</b></center></h5></div>
-                <!-- <div class="col-4" style="width: 24%;"><h5><center><b>AutoLoRa</b></center></h5>  <br> -->
-                <!-- </div> -->
+                <div class="col-3" style="width: 32%;"><h5><center><b>Vanilla Fine-Tuning</b></center></h5></div>
                 <br>
               </div>
               <div class="row schedule-item" >
-                <div class="col-1" style="width: 5%;" ><h5><center><b>Rank</b></center></h5></div>
+                <div class="col-1" style="width: 3%;" ><h5><center><b>Rank</b></center></h5></div>
                 <div class="col"><h5><center><b>Paper</b></center></h5></div>
-                <div class="col-1" style="width: 13%;"><h5><center><b>Venue</b></center></h5></div>
-                <!-- <div class="col-1" style="width: 6%;"><h5><center><b>Mean </b></center></h5></div> -->
-                <div class="col-1" style="width: 8%;"><h5><center><b>Robust Accuracy</b></center></h5></div>
-                <div class="col-1" style="width: 8%;"><h5><center><b>Corruption Accuracy </b></center></h5></div>
-                <div class="col-1" style="width: 8%;"><h5><center><b>Standard Accuracy </b></center></h5></div>
+                <div class="col-1" style="width: 9%;"><h5><center><b>Venue</b></center></h5></div>
+                <div class="col-1" style="width: 10%;"><h5><center><b>Robust Accuracy</b></center></h5></div>
+                <div class="col-1" style="width: 12%;"><h5><center><b>Corruption Accuracy </b></center></h5></div>
+                <div class="col-1" style="width: 10%;"><h5><center><b>Standard Accuracy </b></center></h5></div>
                 <br>
               </div>
             
@@ -277,25 +224,18 @@
             <br>
     
             <div id="cifar100-cifar100-ALF"  class="row section-with-bg">
-              
               <div class="row schedule-item" style="background-color: #f6e7e7; margin-left: 0.01cm;" >
-                <!-- <div class="col-1" style="width: 5%;"><h5><center></center></h5></div> -->
-                <!-- <div class="col"><h5><center><b></b></center></h5></div> -->
-                <!-- <div class="col-1" style="width: 13%;"><h5><center></center></h5></div> -->
                 <div class="col"><h5><center><b>Adversarial Linear Fine-Tuning (ALF)</b></center></h5></div>
-                <div class="col-3" style="width: 24%;"><h5><center><b>Vanilla Fine-Tuning</b></center></h5></div>
-                <!-- <div class="col-4" style="width: 24%;"><h5><center><b>AutoLoRa</b></center></h5>  <br> -->
-                <!-- </div> -->
+                <div class="col-3" style="width: 32%;"><h5><center><b>Vanilla Fine-Tuning</b></center></h5></div>
                 <br>
               </div>
               <div class="row schedule-item" >
-                <div class="col-1" style="width: 5%;" ><h5><center><b>Rank</b></center></h5></div>
+                <div class="col-1" style="width: 3%;" ><h5><center><b>Rank</b></center></h5></div>
                 <div class="col"><h5><center><b>Paper</b></center></h5></div>
-                <div class="col-1" style="width: 13%;"><h5><center><b>Venue</b></center></h5></div>
-                <!-- <div class="col-1" style="width: 6%;"><h5><center><b>Mean </b></center></h5></div> -->
-                <div class="col-1" style="width: 8%;"><h5><center><b>Robust Accuracy</b></center></h5></div>
-                <div class="col-1" style="width: 8%;"><h5><center><b>Corruption Accuracy </b></center></h5></div>
-                <div class="col-1" style="width: 8%;"><h5><center><b>Standard Accuracy </b></center></h5></div>
+                <div class="col-1" style="width: 9%;"><h5><center><b>Venue</b></center></h5></div>
+                <div class="col-1" style="width: 10%;"><h5><center><b>Robust Accuracy</b></center></h5></div>
+                <div class="col-1" style="width: 12%;"><h5><center><b>Corruption Accuracy </b></center></h5></div>
+                <div class="col-1" style="width: 10%;"><h5><center><b>Standard Accuracy </b></center></h5></div>
                 <br>
               </div>
             
@@ -308,25 +248,18 @@
             <br>
     
             <div id="cifar100-cifar100-AFF"class="row section-with-bg">
-          
               <div class="row schedule-item" style="background-color: #f6e7e7; margin-left: 0.01cm;" >
-                <!-- <div class="col-1" style="width: 5%;"><h5><center></center></h5></div> -->
-                <!-- <div class="col"><h5><center><b></b></center></h5></div> -->
-                <!-- <div class="col-1" style="width: 13%;"><h5><center></center></h5></div> -->
-                <div class="col"><h5><center><b>Adversarial Full Fine-Tuning (AFF)</b></center></h5></div>
-                <div class="col-3" style="width: 24%;"><h5><center><b>Vanilla Fine-Tuning</b></center></h5></div>
-                <!-- <div class="col-4" style="width: 24%;"><h5><center><b>AutoLoRa</b></center></h5>  <br> -->
-                <!-- </div> -->
+                <div class="col"><h5><center><b>Adversarial Linear Fine-Tuning (ALF)</b></center></h5></div>
+                <div class="col-3" style="width: 32%;"><h5><center><b>Vanilla Fine-Tuning</b></center></h5></div>
                 <br>
               </div>
               <div class="row schedule-item" >
-                <div class="col-1" style="width: 5%;" ><h5><center><b>Rank</b></center></h5></div>
+                <div class="col-1" style="width: 3%;" ><h5><center><b>Rank</b></center></h5></div>
                 <div class="col"><h5><center><b>Paper</b></center></h5></div>
-                <div class="col-1" style="width: 13%;"><h5><center><b>Venue</b></center></h5></div>
-                <!-- <div class="col-1" style="width: 6%;"><h5><center><b>Mean </b></center></h5></div> -->
-                <div class="col-1" style="width: 8%;"><h5><center><b>Robust Accuracy</b></center></h5></div>
-                <div class="col-1" style="width: 8%;"><h5><center><b>Corruption Accuracy </b></center></h5></div>
-                <div class="col-1" style="width: 8%;"><h5><center><b>Standard Accuracy </b></center></h5></div>
+                <div class="col-1" style="width: 9%;"><h5><center><b>Venue</b></center></h5></div>
+                <div class="col-1" style="width: 10%;"><h5><center><b>Robust Accuracy</b></center></h5></div>
+                <div class="col-1" style="width: 12%;"><h5><center><b>Corruption Accuracy </b></center></h5></div>
+                <div class="col-1" style="width: 10%;"><h5><center><b>Standard Accuracy </b></center></h5></div>
                 <br>
               </div>
             
