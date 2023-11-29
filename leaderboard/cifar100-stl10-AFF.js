@@ -29,70 +29,52 @@
     
             // Create the columns
             const col1 = document.createElement('div');
-            col1.classList.add('col-1');
-            col1.style.width = '5%'
-            col1.innerHTML = `<h5><center>${index+1}</center></h5>`;
-    
-            const col2 = document.createElement('div');
+        col1.classList.add('col-1');
+        col1.style.width = '3%'
+        col1.innerHTML = `<h5><center>${index+1}</center></h5>`;
+
+        const col2 = document.createElement('div');
          col2.classList.add('col');
          if (!!item.comment) {
              col2.innerHTML = `<h5><center><a style="color: #0E1B8E" href=${item.link}>${item.paper}</a> <br> <small><sup>*</sup>${item.comment}</small>  </center></h5>`;
          }else {
              col2.innerHTML = `<h5><center><a style="color: #0E1B8E" href=${item.link}>${item.paper}</a> </center></h5>`;
          }
-            const col11 = document.createElement('div');
-            col11.classList.add('col-1');
-            col11.style.width = '13%'
-            col11.innerHTML = `<h5><center><i>${item.venue}</i></center></h5>`;
-    
-            const col3 = document.createElement('div');
-            col3.classList.add('col-1');
-            col3.style.width = '7%'
-            col3.innerHTML = `<h5><center><b>${item.ra1.toFixed(2)}</b></center></h5>`;
-    
-            // const col4 = document.createElement('div');
-            // col4.classList.add('col-1');
-            // col4.style.width = '6%'
-            // col4.innerHTML = `<h5><center>${item.ca1.toFixed(2)}</center></h5>`;
-    
-            const col5 = document.createElement('div');
-            col5.classList.add('col-1');
-            col5.style.width = '9%'
-            col5.innerHTML = `<h5><center>${item.sa1.toFixed(2)}</center></h5>`;
-    
-            // const col10 = document.createElement('div');
-            // col10.classList.add('col-1');
-            // col10.style.width = '8%'
-            // var m = (item.ra2 + item.sa2)/2
-            // col10.innerHTML = `<h5><center><b>${m.toFixed(2)}</b></center></h5>`;
-    
-            const col6 = document.createElement('div');
-            col6.classList.add('col-1');
-            col6.style.width = '5%'
-            col6.innerHTML = `<h5><center><b>${item.ra2.toFixed(2)}</b></center></h5>`;
-    
-            // const col7 = document.createElement('div');
-            // col7.classList.add('col-1');
-            // col7.style.width = '6%'
-            // col7.innerHTML = `<h5><center>${item.ca2.toFixed(2)}</center></h5>`;
-    
-            const col8 = document.createElement('div');
-            col8.classList.add('col-1');
-            col8.style.width = '8%'
-            col8.innerHTML = `<h5><center>${item.sa2.toFixed(2)}</center></h5>`;
-    
-            // Append the columns to the schedule item
-            scheduleItem.appendChild(col1);
-            scheduleItem.appendChild(col2);
-            scheduleItem.appendChild(col11);
-            scheduleItem.appendChild(col3);
-            // scheduleItem.appendChild(col4);
-            scheduleItem.appendChild(col5);
-            // scheduleItem.appendChild(col10);
-            scheduleItem.appendChild(col6);
-            // scheduleItem.appendChild(col7);
-            scheduleItem.appendChild(col8);
-    
+        
+        const col11 = document.createElement('div');
+        col11.classList.add('col-1');
+        col11.style.width = '9%'
+        col11.innerHTML = `<h5><center><i>${item.venue}</i></center></h5>`;
+
+        const col3 = document.createElement('div');
+        col3.classList.add('col-1');
+        col3.style.width = '9%'
+        col3.innerHTML = `<h5><center><b>${item.ra1.toFixed(2)}</b></center></h5>`;
+
+        const col5 = document.createElement('div');
+        col5.classList.add('col-1');
+        col5.style.width = '10%'
+        col5.innerHTML = `<h5><center>${item.sa1.toFixed(2)}</center></h5>`;
+
+        const col6 = document.createElement('div');
+        col6.classList.add('col-1');
+        col6.style.width = '9%'
+        col6.innerHTML = `<h5><center><b>${item.ra2.toFixed(2)}</b></center></h5>`;
+
+        const col8 = document.createElement('div');
+        col8.classList.add('col-1');
+        col8.style.width = '9%'
+        col8.innerHTML = `<h5><center>${item.sa2.toFixed(2)}</center></h5>`;
+
+        // Append the columns to the schedule item
+        scheduleItem.appendChild(col1);
+        scheduleItem.appendChild(col2);
+        scheduleItem.appendChild(col11);
+        scheduleItem.appendChild(col3);
+        scheduleItem.appendChild(col5);
+        scheduleItem.appendChild(col6);
+        scheduleItem.appendChild(col8);
+        
             // Append the schedule item to the container
             scheduleContainer_cifar100_stl10_AFF.appendChild(scheduleItem);
         });
