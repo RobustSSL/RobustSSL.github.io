@@ -19,6 +19,8 @@
         comment: 'Using ImageNet-1K pre-trained models', ra1: 42.72, ca1: 74.09, sa1: 83.70, ra2: 42.46	, ca2: 74.46, sa2: 	84.17},
         { paper: 'Robust Pre-Training by Adversarial Contrastive Learning', link: 'https://proceedings.neurips.cc/paper/2020/hash/ba7e36c43aff315c00ec2b8625e3b719-Abstract.html', venue: 'NeurIPS 2020', 
         comment: '', ra1: 39.17, ca1: 70.72, sa1: 78.22, ra2: 37.92	, ca2: 72.65, sa2: 	80.65},
+        { paper: 'Effective Targeted Attacks for Adversarial Self-Supervised Learning', link: 'https://openreview.net/forum?id=2f0dlMZlNb', venue: 'NeurIPS 2023', 
+        comment: 'Code is not released. The results are copied from the original paper.', ra1: 35.81, ca1: 0, sa1: 78.45, ra2: 37.92, ca2: 72.65, sa2: 	80.65},
         { paper: 'Adversarial Self-Supervised Contrastive Learning', link: 'https://proceedings.neurips.cc/paper/2020/hash/1f1baa5b8edac74eb4eaa329f14a0361-Abstract.html', venue: 'NeurIPS 2020', 
         comment: '', ra1: 26.12, ca1: 0, sa1: 77.90, ra2: 37.92	, ca2: 72.65, sa2: 	80.65}
     ];
